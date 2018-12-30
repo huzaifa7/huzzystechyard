@@ -37,7 +37,7 @@ defaults:
       type: "posts" # previously `post` in Jekyll 2.2.
     values:
       layout: "post"
-      published: false
+      published: true
       permalink: /:year/:title
       author: huzaifa asif
 
