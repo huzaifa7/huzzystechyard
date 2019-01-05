@@ -1,0 +1,10 @@
+<!-- Renders post date, title, and snippet of text. -->
+<div class="py-2 mb-2 prose">
+  <h2 class="h1 lh-condensed col-9 mt-0">
+    <a class="link-primary" title="{{ post.url | prepend: site.baseurl }}" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+  </h2>
+  <p><a class="no-underline h5 bold text-accent" title="{{ post.url | prepend: site.baseurl }}" href="{{ post.url | prepend: site.baseurl }}" color="#ABB7B7">{{ post.date | date: "%b %-d, %Y" }}</a></p>
+  <img src="{{ post.image }}" width="50%" heigh="50%">
+  <p>{{ post.content | strip_html | truncatewords:30 }}</p>
+  <p><a class="link-primary" title="{{ post.url | prepend: site.baseurl }}" href="{{ post.url | prepend: site.baseurl }}">Read More</a></p>
+</div>
